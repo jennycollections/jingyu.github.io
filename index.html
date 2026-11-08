@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jenny collections: data analysis projects for better business.">
+<meta name="theme-color" content="#102b4e">
+<title>Jenny Collections | Portfolio</title>
+<style>
+:root{--navy:#102b4e;--navy2:#1b416b;--blue:#3478b9;--pale:#edf4fa;--ink:#1c2d42;--muted:#65758a;--line:#e2e9f0;--soft:#f7f9fc;--white:#fff;--shadow:0 12px 35px rgba(16,43,78,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#fff}a{color:inherit;text-decoration:none}button,select{font:inherit}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #85b7e3;outline-offset:3px}
+.container{width:min(1120px,calc(100% - 42px));margin:auto}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.12rem;font-weight:850;letter-spacing:-.04em;color:var(--navy)}.brand span{color:var(--blue)}.links{display:flex;gap:29px;align-items:center;font-size:.91rem;color:#50627a}.links a:hover,.links a.active{color:var(--blue)}.links .contact-link{background:var(--navy);color:#fff;padding:9px 16px;border-radius:9px}.nav-actions{display:flex;align-items:center;gap:10px}.language-switch{display:flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:999px;background:#f7f9fc}.lang-btn{border:0;background:transparent;color:#65758a;border-radius:999px;padding:5px 9px;font-size:.73rem;font-weight:850;cursor:pointer}.lang-btn.active{background:var(--navy);color:#fff}.menu{display:none;background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 11px;color:var(--navy)}
+.hero{background:linear-gradient(115deg,#f8fbff,#e6f0f9);border-bottom:1px solid var(--line);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #c9dced;border-radius:50%;right:-130px;top:-220px;box-shadow:0 0 0 35px rgba(52,120,185,.04),0 0 0 75px rgba(52,120,185,.03)}.hero-inner{position:relative;z-index:1;padding:91px 0 95px;max-width:1120px}.eyebrow,.kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--blue)}h1{font-size:clamp(2.8rem,6vw,4.7rem);line-height:1.05;letter-spacing:-.065em;color:var(--navy);margin:16px 0}.hero p{max-width:650px;color:#596b80;font-size:1.08rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{border:0;border-radius:9px;padding:11px 17px;font-weight:750;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;cursor:pointer}.primary{background:var(--navy);color:#fff}.secondary{background:#fff;color:var(--navy);border:1px solid #cbd8e5}.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+section{padding:78px 0}.section-head{max-width:690px;margin-bottom:30px}h2{font-size:clamp(2rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.05em;color:var(--navy);margin:8px 0 12px}.intro{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px}.about-copy p{color:#56677c;margin-top:0}.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}.fact b{display:block;color:var(--navy);font-size:.9rem}.fact span{font-size:.8rem;color:var(--muted)}
+#projects{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.project-toolbar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px;margin:28px 0 20px;box-shadow:0 5px 18px rgba(16,43,78,.035)}.filter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.filter label{display:block;font-size:.77rem;font-weight:800;color:#41546b;margin-bottom:7px}.filter select{width:100%;padding:11px 36px 11px 12px;border:1px solid #d8e1eb;border-radius:9px;background:#fff;color:var(--ink);font-size:.88rem}.toolbar-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px}.result-count{font-size:.84rem;color:var(--muted)}.clear-btn{border:0;background:transparent;color:var(--blue);font-weight:750;cursor:pointer;font-size:.84rem}.active-filters{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.chip{font-size:.73rem;color:#315d84;background:#eaf3fb;border-radius:999px;padding:4px 9px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;min-height:220px;transition:.2s;cursor:pointer;text-align:left;width:100%}.project-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c4d8e9}.card-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.category{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--blue)}.arrow{color:#8a9aae;font-size:1.1rem}.project-card h3{color:var(--navy);font-size:1.12rem;line-height:1.3;margin:18px 0 7px;letter-spacing:-.02em}.project-card p{font-size:.85rem;color:var(--muted);margin:0 0 18px}.card-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.tag{background:#f0f4f8;color:#53677e;padding:4px 8px;border-radius:6px;font-size:.68rem}.empty{background:#fff;border:1px dashed #cbd8e5;border-radius:14px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}.empty strong{display:block;color:var(--navy);margin-bottom:5px}
+.detail{display:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,38px);margin-top:18px;box-shadow:var(--shadow)}.detail.open{display:block}.detail-back{border:0;background:transparent;color:var(--blue);font-weight:800;cursor:pointer;padding:0;margin-bottom:20px}.detail h3{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.15;letter-spacing:-.04em;color:var(--navy);margin:8px 0}.detail-summary{font-size:1.03rem;color:var(--muted);max-width:780px}.detail-meta{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 26px}.detail-columns{display:grid;grid-template-columns:1.25fr .75fr;gap:34px}.detail h4{color:var(--navy);margin:22px 0 7px;font-size:1rem}.detail p,.detail li{color:#586a7f;font-size:.9rem}.detail ul{padding-left:20px}.resource-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.resource-link{display:inline-flex;align-items:center;gap:7px;background:var(--navy);color:#fff;padding:10px 13px;border-radius:8px;font-size:.83rem;font-weight:750}.resource-link.disabled{background:#eef2f6;color:#8794a3;cursor:default}.detail-note{font-size:.76rem;color:#8491a0;background:#f7f9fb;border-radius:9px;padding:11px 13px;margin-top:20px}
+.skills-strip{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.skill-pill{border:1px solid var(--line);padding:7px 11px;border-radius:999px;color:#52657b;font-size:.8rem}
+.experience-card{max-width:760px;border-left:3px solid var(--blue);padding:5px 0 5px 22px}.experience-card h3{color:var(--navy);margin:0}.experience-card p{color:var(--muted);margin:7px 0}
+.contact{background:var(--navy);color:white}.contact h2{color:white}.contact .kicker{color:#a8c9e8}.contact .intro{color:#c5d2df}.contact-box{margin-top:26px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);border-radius:16px;padding:25px;display:flex;align-items:center;justify-content:space-between;gap:20px}.contact-box p{color:#c5d2df;margin:5px 0 0;font-size:.9rem}.contact-box .primary{background:#fff;color:var(--navy)}footer{background:#0b2039;color:#afc0d1;padding:20px 0;font-size:.78rem}footer .container{display:flex;justify-content:space-between;gap:15px}
+@media(max-width:850px){.project-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.detail-columns{grid-template-columns:1fr}.hero-inner{padding:75px 0}.fact-grid{max-width:600px}}
+@media(max-width:600px){.container{width:calc(100% - 30px)}.nav{height:64px}.menu{display:block}.links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 22px;flex-direction:column;align-items:stretch;gap:14px}.links.open{display:flex}.links .contact-link{text-align:center}.hero-inner{padding:65px 0}.filter-grid,.project-grid{grid-template-columns:1fr}section{padding:62px 0}.toolbar-bottom{align-items:flex-start}.contact-box,footer .container{align-items:flex-start;flex-direction:column}.fact-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="#home">Jenny <span>Collections</span></a>
+    <div class="nav-actions"><div class="language-switch"><button type="button" class="lang-btn active" id="langEN" onclick="setLanguage('en')">EN</button><button type="button" class="lang-btn" id="langDE" onclick="setLanguage('de')">DE</button></div><button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">☰</button></div>
+    <nav class="links" id="navlinks">
+      <a href="#home" onclick="closeNav()" id="navHome">Home</a>
+      <a href="#about" onclick="closeNav()" id="navAbout">About</a>
+      <a href="#projects" onclick="closeNav()" id="navProjects">Projects</a>
+      <a class="contact-link" href="#contact" onclick="closeNav()" id="navContact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="eyebrow" id="heroEyebrow">Data-Driven · AI-Powered · Management</div>
+    <h1 id="heroTitle">Hi, I'm <span>Jenny.</span></h1>
+    <p id="heroIntro">I provide data-based solutions for real-world business problems.</p>
+    <div class="hero-actions"><a class="btn primary" href="#projects" id="heroProjectsBtn">Explore projects ↗</a><a class="btn secondary" href="#about" id="heroAboutBtn">About me</a></div>
+  </div>
+</section>
 
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker" id="aboutKicker">About</div><h2 id="aboutTitle">Connecting business and technology.</h2><p class="intro" id="aboutIntro">A short introduction to my academic background, interests and analytical toolkit.</p></div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p id="aboutP1">I studied Management &amp; Digital Technology at the Technical University of Munich (TUM), where I built a solid foundation for <strong>end-to-end data analysis.</strong></p>
+        <p id="aboutP2">I'm interested in both traditional analytical tools and emerging generative AI technologys, especially where analytical work can support business understanding and decision-making.</p>
+        <p id="aboutP3">This website is a collection of projects. Each project page is designed to document the objective, methodology, findings, report and sources that are available.</p>
+      </div>
+      <div class="fact-grid">
+        <div class="fact"><b id="factEducation">End-to-End Data Analysis</b><span id="factEducationValue"Data collection · Data cleaning · EDA · Visualization </span></div>
+        <div class="fact"><b id="factFocus">Ownership</b><span id="factFocusValue">Keep independency while wisely ask for help.</span></div>
+        <div class="fact"><b id="factMethods">Multi-Task Management</b><span id="Manage cross different projects.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head"><div class="kicker" id="projectsKicker">Project library</div><h2 id="projectsTitle">Projects, organised your way.</h2><p class="intro" id="projectsIntro">Browse the full collection alphabetically, or combine filters to find projects by industry, analytical method and software.</p></div>
+    <div class="project-toolbar">
+      <div class="filter-grid">
+        <div class="filter"><label for="industryFilter" id="industryLabel">Industry</label><select id="industryFilter"><option value="">All industries</option></select></div>
+        <div class="filter"><label for="methodFilter" id="methodLabel">Method</label><select id="methodFilter"><option value="">All methods</option></select></div>
+        <div class="filter"><label for="softwareFilter" id="softwareLabel">Software</label><select id="softwareFilter"><option value="">All software</option></select></div>
+      </div>
+      <div class="toolbar-bottom"><span class="result-count" id="resultCount" aria-live="polite"></span><button class="clear-btn" id="clearFiltersBtn" onclick="clearFilters()">Clear all filters ↺</button></div>
+      <div class="active-filters" id="activeFilters"></div>
+    </div>
+    <div class="project-grid" id="projectGrid"></div>
+    <article class="detail" id="projectDetail" aria-live="polite"></article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head"><div class="kicker" id="contactKicker">Contact</div><h2 id="contactTitle">Let's connect.</h2><p class="intro" id="contactIntro">For professional opportunities, project discussions or collaboration, feel free to get in touch.</p></div>
+    <div class="contact-box"><div><strong id="contactStrong">Have a question or an opportunity?</strong><p id="contactText">Add your professional email and profile links here before publishing.</p></div><a class="btn primary" id="emailBtn" href="mailto:jingyuhan.de@gmail.com">Email me ↗</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="container"><span>© <span id="year"></span> Jenny Collections</span><span id="footerText">Built with HTML, CSS &amp; JavaScript · GitHub Pages</span></div></footer>
+
+<script>
+/*
+  PROJECT DATA: edit this list to add your real projects.
+  - industries, methods and software are arrays, so one project can belong to multiple filters.
+  - reportUrl and codeUrl should be full URLs. Leave them as "" until the files/repositories exist.
+  - Keep project names unique; cards are automatically sorted A–Z when no filters are selected.
+*/
+const I18N={en:{home:"Home",about:"About",projects:"Projects",contact:"Contact",hero:"Management · Data · Technology",intro:"Business-minded, data-driven. I explore how analytics and technology can help solve real-world business problems.",explore:"Explore projects ↗",aboutMe:"About me",aboutTitle:"Connecting business and technology.",aboutIntro:"A short introduction to my academic background, interests and analytical toolkit.",about1:"I studied <strong>Management &amp; Digital Technology at the Technical University of Munich (TUM)</strong>, with an academic focus at the intersection of management, digitalisation and technology.",about2:"I'm interested in data analytics, quantitative methods and machine learning, especially where analytical work can support business understanding and decision-making.",about3:"This portfolio is a growing collection of projects. Each project page is designed to document the objective, methodology, findings, report and source code where available.",education:"Education",focus:"Focus",methods:"Methods",location:"Location",eduValue:"M.Sc. Management &amp; Digital Technology · TUM",focusValue:"Business &amp; Data Analytics",methodsValue:"Statistical analysis · ML",locationValue:"Germany",projectLibrary:"Project library",projectTitle:"Projects, organised your way.",projectIntro:"Browse the full collection alphabetically, or combine filters to find projects by industry, analytical method and software.",industry:"Industry",allIndustries:"All industries",method:"Method",allMethods:"All methods",software:"Software",allSoftware:"All software",clear:"Clear all filters ↺",one:"project",many:"projects",filtered:"filtered results",sorted:"A–Z by project name",none:"No matching projects",noneHelp:"Try removing one of the filters or clear all filters.",back:"← Back to all projects",objective:"Project objective",approach:"Approach &amp; methodology",findings:"Findings &amp; conclusions",resources:"Project resources",resourceIntro:"Open the project report or source code when the links are available.",report:"Read report",code:"View GitHub code",later:"add link later",contactTitle:"Let's connect.",contactIntro:"For professional opportunities, project discussions or collaboration, feel free to get in touch.",contactStrong:"Have a question or an opportunity?",contactText:"Add your professional email and profile links here before publishing.",email:"Email me ↗",footer:"Built with HTML, CSS &amp; JavaScript · GitHub Pages"},de:{home:"Startseite",about:"Über mich",projects:"Projekte",contact:"Kontakt",hero:"Management · Daten · Technologie",intro:"Ich verbinde betriebswirtschaftliches Denken mit Daten und Technologie. Mich interessiert, wie Analysen reale geschäftliche Fragestellungen lösen können.",explore:"Projekte ansehen ↗",aboutMe:"Über mich",aboutTitle:"Wirtschaft und Technologie verbinden.",aboutIntro:"Ein kurzer Einblick in meinen akademischen Hintergrund, meine Interessen und meine analytischen Kenntnisse.",about1:"Ich habe <strong>Management &amp; Digital Technology an der Technischen Universität München (TUM)</strong> studiert. Mein fachlicher Schwerpunkt liegt an der Schnittstelle von Management, Digitalisierung und Technologie.",about2:"Ich interessiere mich für Datenanalyse, quantitative Methoden und Machine Learning – insbesondere dafür, wie analytische Arbeit betriebswirtschaftliche Entscheidungen unterstützen kann.",about3:"Dieses Portfolio wächst kontinuierlich. Die einzelnen Projektseiten dokumentieren Zielsetzung, Methodik, Ergebnisse sowie – sofern verfügbar – Berichte und Quellcode.",education:"Ausbildung",focus:"Schwerpunkt",methods:"Methoden",location:"Standort",eduValue:"M.Sc. Management &amp; Digital Technology · TUM",focusValue:"Business &amp; Data Analytics",methodsValue:"Statistische Analyse · ML",locationValue:"Deutschland",projectLibrary:"Projektübersicht",projectTitle:"Projekte – gezielt durchsuchen.",projectIntro:"Alle Projekte sind standardmäßig alphabetisch sortiert. Mit den Filtern können Sie nach Branche, Analysemethode und Software kombinieren.",industry:"Branche",allIndustries:"Alle Branchen",method:"Methode",allMethods:"Alle Methoden",software:"Software",allSoftware:"Alle Programme",clear:"Filter zurücksetzen ↺",one:"Projekt",many:"Projekte",filtered:"gefilterte Ergebnisse",sorted:"Alphabetisch nach Projektnamen",none:"Keine passenden Projekte",noneHelp:"Entfernen Sie einen Filter oder setzen Sie alle Filter zurück.",back:"← Zurück zur Projektübersicht",objective:"Projektziel",approach:"Vorgehensweise &amp; Methodik",findings:"Ergebnisse &amp; Schlussfolgerungen",resources:"Projektmaterialien",resourceIntro:"Hier finden Sie den Projektbericht und den Quellcode, sobald die Links verfügbar sind.",report:"Bericht ansehen",code:"GitHub-Code ansehen",later:"Link folgt",contactTitle:"Kontakt aufnehmen.",contactIntro:"Bei Interesse an einem fachlichen Austausch, beruflichen Möglichkeiten oder einer Zusammenarbeit freue ich mich über Ihre Nachricht.",contactStrong:"Fragen oder eine interessante Möglichkeit?",contactText:"Bitte ergänzen Sie vor der Veröffentlichung Ihre geschäftliche E-Mail-Adresse und Profil-Links.",email:"E-Mail senden ↗",footer:"Erstellt mit HTML, CSS &amp; JavaScript · GitHub Pages"}};
+const TERM_DE={"Retail":"Einzelhandel","General Business":"Allgemeine Wirtschaft","Technology":"Technologie","Finance":"Finanzwesen","Automotive":"Automobil","Healthcare":"Gesundheitswesen","EDA":"Explorative Datenanalyse","Segmentation":"Segmentierung","Descriptive Analytics":"Deskriptive Analyse","Machine Learning":"Maschinelles Lernen","Model Evaluation":"Modellbewertung","Time Series":"Zeitreihenanalyse","Classification":"Klassifikation","Optimization":"Optimierung"};
+let lang="en";
+function term(v){return lang==="de"?(TERM_DE[v]||v):v;}
+function setLanguage(next){const openId=location.hash.startsWith("#project/")?location.hash.slice(9):null;lang=next;document.documentElement.lang=next;document.getElementById('langEN').classList.toggle('active',next==='en');document.getElementById('langDE').classList.toggle('active',next==='de');const t=I18N[next];const ids={navHome:'home',navAbout:'about',navProjects:'projects',navContact:'contact',heroEyebrow:'hero',heroTitle:'heroTitle',heroIntro:'intro',heroProjectsBtn:'explore',heroAboutBtn:'aboutMe',aboutKicker:'about',aboutTitle:'aboutTitle',aboutIntro:'aboutIntro',aboutP1:'about1',aboutP2:'about2',aboutP3:'about3',factEducation:'education',factFocus:'focus',factMethods:'methods',factLocation:'location',factEducationValue:'eduValue',factFocusValue:'focusValue',factMethodsValue:'methodsValue',factLocationValue:'locationValue',projectsKicker:'projectLibrary',projectsTitle:'projectTitle',projectsIntro:'projectIntro',industryLabel:'industry',methodLabel:'method',softwareLabel:'software',clearFiltersBtn:'clear',contactKicker:'contact',contactTitle:'contactTitle',contactIntro:'contactIntro',contactStrong:'contactStrong',contactText:'contactText',emailBtn:'email',footerText:'footer'};for(const [id,key] of Object.entries(ids)){const el=document.getElementById(id);if(el)el.innerHTML=t[key];}document.getElementById('industryFilter').options[0].text=t.allIndustries;document.getElementById('methodFilter').options[0].text=t.allMethods;document.getElementById('softwareFilter').options[0].text=t.allSoftware;renderProjects();if(openId)openProject(openId);}
+
+const projects = [
+  {
+    id: "customer-analytics",
+    name: "Customer Analytics",
+    summary: "Explore customer behaviour and translate transaction data into business insights.", summaryDe: "Kundenverhalten analysieren und Transaktionsdaten in betriebswirtschaftliche Erkenntnisse übersetzen.",
+    industries: ["Retail", "General Business"],
+    methods: ["EDA", "Segmentation", "Descriptive Analytics"],
+    software: ["SQL"],
+    objective: "Example project entry: define a customer analytics question, such as identifying purchasing patterns or high-value customer segments.", objectiveDe: "Beispiel: Eine Fragestellung zur Kundenanalyse definieren, etwa zum Kaufverhalten oder zur Identifikation wertvoller Kundensegmente.",
+    approach: ["Inspect and clean the source data.", "Use SQL joins, aggregation and window functions to build the analysis.", "Summarise relevant patterns and connect them to a business question."], approachDe: ["Quelldaten prüfen und bereinigen.", "Die Analyse mit SQL-Joins, Aggregationen und Window Functions durchführen.", "Relevante Muster zusammenfassen und mit einer betriebswirtschaftlichen Fragestellung verknüpfen."],
+    findings: "Add your verified findings here. Include figures, charts and a short explanation of what they mean for the business question.", findingsDe: "Ergänzen Sie hier die belegten Ergebnisse, Kennzahlen und Diagramme sowie deren Bedeutung für die betriebswirtschaftliche Fragestellung.",
+    reportUrl: "",
+    codeUrl: "",
+    status: "Example entry — replace with your project"
+  },
+  {
+    id: "predictive-modelling",
+    name: "Predictive Modelling",
+    summary: "Compare predictive approaches and evaluate how well a model generalises to unseen data.", summaryDe: "Prognoseverfahren vergleichen und bewerten, wie gut ein Modell auf unbekannte Daten übertragbar ist.",
+    industries: ["General Business", "Technology"],
+    methods: ["Regression", "Machine Learning", "Model Evaluation"],
+    software: ["Python", "Scikit-learn"],
+    objective: "Example project entry: formulate a prediction task, define the target variable and determine which performance measure is appropriate.", objectiveDe: "Beispiel: Eine Prognoseaufgabe formulieren, die Zielvariable festlegen und geeignete Bewertungsmetriken auswählen.",
+    approach: ["Prepare the dataset and define training and test sets.", "Train and compare a baseline model with selected machine learning algorithms.", "Evaluate performance using suitable metrics and cross-validation."], approachDe: ["Datensatz vorbereiten sowie Trainings- und Testdaten festlegen.", "Ein Baseline-Modell und ausgewählte Machine-Learning-Algorithmen trainieren und vergleichen.", "Die Modellleistung mit geeigneten Metriken und Cross-Validation bewerten."],
+    findings: "Add your actual model results, evaluation metrics, limitations and interpretation here. Avoid reporting a metric without explaining the evaluation setup.", findingsDe: "Ergänzen Sie hier die tatsächlichen Modellergebnisse, Bewertungsmetriken, Einschränkungen und deren Interpretation. Beschreiben Sie auch das Evaluationsverfahren.",
+    reportUrl: "",
+    codeUrl: "",
+    status: "Example entry — replace with your project"
+  },
+  {
+    id: "retail-sales-analysis",
+    name: "Retail Sales Analysis",
+    summary: "Analyse sales performance and investigate trends across products, customers or time.", summaryDe: "Umsatzentwicklungen analysieren und Trends nach Produkten, Kundengruppen oder Zeiträumen untersuchen.",
+    industries: ["Retail"],
+    methods: ["EDA", "Time Series", "Descriptive Analytics"],
+    software: ["Python", "Pandas"],
+    objective: "Example project entry: investigate the drivers of sales performance and identify meaningful trends in the available data.", objectiveDe: "Beispiel: Einflussfaktoren der Umsatzentwicklung untersuchen und aussagekräftige Trends in den verfügbaren Daten identifizieren.",
+    approach: ["Check data quality and prepare the analysis dataset.", "Explore sales patterns by time, product and customer group.", "Visualise the main patterns and formulate evidence-based recommendations."], approachDe: ["Datenqualität prüfen und den Analysedatensatz vorbereiten.", "Umsatzmuster nach Zeitraum, Produkt und Kundengruppe untersuchen.", "Zentrale Muster visualisieren und evidenzbasierte Empfehlungen ableiten."],
+    findings: "Add your actual charts, quantified observations and business interpretation here.", findingsDe: "Ergänzen Sie hier Ihre Diagramme, quantifizierten Beobachtungen und die betriebswirtschaftliche Interpretation.",
+    reportUrl: "",
+    codeUrl: "",
+    status: "Example entry — replace with your project"
+  }
+];
+
+const filters = {
+  industry: document.getElementById("industryFilter"),
+  method: document.getElementById("methodFilter"),
+  software: document.getElementById("softwareFilter")
+};
+function uniqueValues(key) {
+  return [...new Set(projects.flatMap(p => p[key] || []))].sort((a,b) => a.localeCompare(b));
+}
+function fillFilter(select, key) {
+  uniqueValues(key).forEach(value => {
+    const option = document.createElement("option");
+    option.value = value; option.textContent = value; select.appendChild(option);
+  });
+}
+fillFilter(filters.industry, "industries");
+fillFilter(filters.method, "methods");
+fillFilter(filters.software, "software");
+
+function selectedProjects() {
+  const industry = filters.industry.value, method = filters.method.value, software = filters.software.value;
+  return projects.filter(p =>
+    (!industry || p.industries.includes(industry)) &&
+    (!method || p.methods.includes(method)) &&
+    (!software || p.software.includes(software))
+  ).sort((a,b) => a.name.localeCompare(b.name, undefined, {sensitivity:"base"}));
+}
+function renderProjects() {
+  const list = selectedProjects(), grid = document.getElementById("projectGrid"), t=I18N[lang];
+  document.getElementById("resultCount").textContent = `${list.length} ${list.length === 1 ? t.one : t.many} · ${hasFilters() ? t.filtered : t.sorted}`;
+  const chips = [];
+  if(filters.industry.value) chips.push((lang==="de"?"Branche: ":"Industry: ") + term(filters.industry.value));
+  if(filters.method.value) chips.push((lang==="de"?"Methode: ":"Method: ") + term(filters.method.value));
+  if(filters.software.value) chips.push((lang==="de"?"Software: ":"Software: ") + term(filters.software.value));
+  document.getElementById("activeFilters").innerHTML = chips.map(c => `<span class="chip">${escapeHtml(c)}</span>`).join("");
+  document.getElementById("projectDetail").classList.remove("open");
+  document.getElementById("projectDetail").innerHTML = "";
+  if(!list.length) {
+    grid.innerHTML = `<div class="empty"><strong>${t.none}</strong>${t.noneHelp}</div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p => `
+    <button class="project-card" type="button" onclick="openProject('${p.id}')">
+      <div class="card-top"><span class="category">${escapeHtml(term(p.industries[0] || "Project"))}</span><span class="arrow">↗</span></div>
+      <h3>${escapeHtml(p.name)}</h3>
+      <p>${escapeHtml(lang==="de"?(p.summaryDe||p.summary):p.summary)}</p>
+      <div class="card-tags">${[...p.methods.slice(0,2), ...p.software.slice(0,2)].map(t => `<span class="tag">${escapeHtml(term(t))}</span>`).join("")}</div>
+    </button>`).join("");
+}
+function hasFilters(){return Object.values(filters).some(s => s.value !== "");}
+function clearFilters(){Object.values(filters).forEach(s => s.value="");renderProjects();}
+Object.values(filters).forEach(s => s.addEventListener("change", renderProjects));
+function escapeHtml(value){return String(value).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function resourceLink(url,label){
+  return url ? `<a class="resource-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>` : `<span class="resource-link disabled" aria-disabled="true">${label} — ${I18N[lang].later}</span>`;
+}
+function openProject(id){
+  const p = projects.find(item => item.id === id); if(!p) return;
+  const detail = document.getElementById("projectDetail");
+  const t=I18N[lang], objective=lang==="de"?(p.objectiveDe||p.objective):p.objective, findings=lang==="de"?(p.findingsDe||p.findings):p.findings;
+  detail.innerHTML = `
+    <button class="detail-back" type="button" onclick="closeProject()">${t.back}</button>
+    <div class="kicker">${escapeHtml(p.industries.map(term).join(" · "))}</div>
+    <h3>${escapeHtml(p.name)}</h3>
+    <p class="detail-summary">${escapeHtml(lang==="de"?(p.summaryDe||p.summary):p.summary)}</p>
+    <div class="detail-meta">${[...p.methods,...p.software].map(x=>`<span class="chip">${escapeHtml(term(x))}</span>`).join("")}</div>
+    <div class="detail-columns"><div>
+      <h4>${t.objective}</h4><p>${escapeHtml(objective)}</p>
+      <h4>${t.approach}</h4><ul>${(lang==="de"?(p.approachDe||p.approach):p.approach).map(x=>`<li>${escapeHtml(x)}</li>`).join("")}</ul>
+      <h4>${t.findings}</h4><p>${escapeHtml(findings)}</p>
+    </div><div><h4>${t.resources}</h4><p>${t.resourceIntro}</p>
+      <div class="resource-links">${resourceLink(p.reportUrl,t.report)}${resourceLink(p.codeUrl,t.code)}</div>
+      <div class="detail-note">${lang==="de"?"Beispieleintrag — bitte durch ein eigenes Projekt ersetzen":escapeHtml(p.status)}</div>
+    </div></div>`;
+  detail.classList.add("open");
+  detail.scrollIntoView({behavior:"smooth",block:"start"});
+  history.replaceState(null,"",`#project/${p.id}`);
+}
+function closeProject(){
+  document.getElementById("projectDetail").classList.remove("open");
+  document.getElementById("projectDetail").innerHTML="";
+  history.replaceState(null,"","#projects");
+  document.getElementById("projectGrid").scrollIntoView({behavior:"smooth",block:"center"});
+}
+function toggleNav(){const n=document.getElementById("navlinks"),b=document.querySelector(".menu");const o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));}
+function closeNav(){document.getElementById("navlinks").classList.remove("open");document.querySelector(".menu").setAttribute("aria-expanded","false");}
+document.getElementById("year").textContent = new Date().getFullYear();
+renderProjects();
+setLanguage("en");
+</script>
+</body>
+</html>
