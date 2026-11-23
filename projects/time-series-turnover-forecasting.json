@@ -1,0 +1,62 @@
+{
+  "id": "time-series-turnover-forecasting",
+  "highlight": {
+    "rank": 1,
+    "value": "−45%",
+    "label": "forecast error vs. exponential smoothing (retail turnover)",
+    "labelDe": "Prognosefehler gegenüber exponentieller Glättung (Einzelhandelsumsatz)"
+  },
+  "name": "Time Series: Retail Turnover Forecasting",
+  "summary": "Compare five forecasting methods on monthly NSW supermarket turnover and produce a 24-month forecast.",
+  "summaryDe": "Fünf Prognosemethoden anhand monatlicher Umsätze von Supermärkten in New South Wales vergleichen und eine 24-Monats-Prognose erstellen.",
+  "industries": [
+    "Retail & Consumer"
+  ],
+  "methods": [
+    "Time Series Forecasting",
+    "Exponential Smoothing",
+    "STL Decomposition",
+    "Model Evaluation"
+  ],
+  "software": [
+    "R",
+    "forecast",
+    "ggplot2"
+  ],
+  "objective": "Forecast monthly retail turnover of NSW supermarket and grocery stores and identify the most accurate forecasting method.",
+  "objectiveDe": "Den monatlichen Einzelhandelsumsatz von Supermärkten und Lebensmittelgeschäften in New South Wales prognostizieren und die genaueste Prognosemethode identifizieren.",
+  "approach": [
+    "Use the ABS Retail Trade series (April 1982 to December 2013) with a Box-Cox transformation and a 70/30 train-test split.",
+    "Compare naive, seasonal naive, simple and double exponential smoothing and STL decomposition on the test set and with time-series cross-validation (RMSE and MAPE).",
+    "Check residuals with statistical tests and use the best method to produce a 24-month forecast."
+  ],
+  "approachDe": [
+    "Die ABS-Zeitreihe Retail Trade (April 1982 bis Dezember 2013) mit Box-Cox-Transformation und einer 70/30-Aufteilung in Trainings- und Testdaten verwenden.",
+    "Naive und saisonal naive Prognose, einfache und doppelte exponentielle Glättung sowie STL-Zerlegung auf den Testdaten und per Zeitreihen-Kreuzvalidierung (RMSE und MAPE) vergleichen.",
+    "Residuen mit statistischen Tests prüfen und mit der besten Methode eine 24-Monats-Prognose erstellen."
+  ],
+  "findings": "STL decomposition performed best in cross-validation (RMSE 35.3, MAPE 2.6%), clearly ahead of double exponential smoothing (RMSE 71.5, MAPE 4.7%) and the naive benchmarks, and was used for the final 24-month forecast.",
+  "findingsDe": "Die STL-Zerlegung schnitt in der Kreuzvalidierung am besten ab (RMSE 35,3; MAPE 2,6 %) und lag deutlich vor der doppelten exponentiellen Glättung (RMSE 71,5; MAPE 4,7 %) sowie den naiven Benchmarks. Sie wurde für die finale 24-Monats-Prognose verwendet.",
+  "resources": [
+    {
+      "name": "Dataset",
+      "file": "Turnover_Australia.xlsx (ABS Retail Trade)",
+      "type": "dataset",
+      "url": "https://github.com/jennycollections/time-series-turnover-forecasting/blob/main/data/Turnover_Australia.xlsx"
+    },
+    {
+      "name": "Source Code",
+      "file": "run_all.R · R/",
+      "type": "code",
+      "url": "https://github.com/jennycollections/time-series-turnover-forecasting/blob/main/run_all.R"
+    },
+    {
+      "name": "24-Month Forecast",
+      "file": "forecast_24_months.png",
+      "type": "report",
+      "url": "https://github.com/jennycollections/time-series-turnover-forecasting/blob/main/outputs/forecast_24_months.png"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/time-series-turnover-forecasting",
+  "status": "Individual data science project"
+}

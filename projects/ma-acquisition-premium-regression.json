@@ -1,0 +1,44 @@
+{
+  "id": "ma-acquisition-premium-regression",
+  "name": "M&A Acquisition Premium Regression Analysis",
+  "summary": "Examine the relationship between target firms’ R&D expenses and acquisition premiums in international technology-sector deals.",
+  "summaryDe": "Den Zusammenhang zwischen F&E-Ausgaben von Zielunternehmen und Übernahmeprämien bei internationalen Technologie-Transaktionen untersuchen.",
+  "industries": [
+    "Finance",
+    "M&A"
+  ],
+  "methods": [
+    "Regression Analysis",
+    "OLS",
+    "Descriptive Statistics",
+    "Data Cleaning"
+  ],
+  "software": [
+    "Stata",
+    "Excel"
+  ],
+  "objective": "Test the hypothesis that target firms’ research and development expenses are positively related to the acquisition premium paid by acquirors.",
+  "objectiveDe": "Die Hypothese prüfen, dass die Forschungs- und Entwicklungsausgaben von Zielunternehmen positiv mit der gezahlten Übernahmeprämie zusammenhängen.",
+  "approach": [
+    "Combine acquisition, company and country-level data from SDC Platinum, Refinitiv and supplementary sources.",
+    "Standardize country names and match cultural- and geographic-distance indicators in Excel.",
+    "Clean and winsorize variables, calculate descriptive statistics and estimate an OLS regression with control variables and year, country and industry indicators."
+  ],
+  "approachDe": [
+    "Transaktions-, Unternehmens- und Länderinformationen aus SDC Platinum, Refinitiv und ergänzenden Quellen zusammenführen.",
+    "Ländernamen standardisieren und Indikatoren für kulturelle und geografische Distanz in Excel zuordnen.",
+    "Variablen bereinigen und winsorisieren, deskriptive Statistiken berechnen und eine OLS-Regression mit Kontrollvariablen sowie Jahres-, Länder- und Branchenindikatoren schätzen."
+  ],
+  "findings": "The paper specifies the hypothesis, sample construction and OLS regression framework. The detailed coefficient estimates and statistical interpretation are documented in the report.",
+  "findingsDe": "Die Arbeit beschreibt Hypothese, Stichprobenbildung und OLS-Regressionsmodell. Die detaillierten Koeffizientenschätzungen und statistischen Interpretationen sind im Bericht dokumentiert.",
+  "resources": [
+    {
+      "name": "Project Report",
+      "file": "M&A regression analysis.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/m-a-acquisition-premium-regression-analysis/blob/main/M%26A%20regression%20analysis.pdf"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/m-a-acquisition-premium-regression-analysis",
+  "status": "Individual research paper · Applied regression analysis"
+}

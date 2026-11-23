@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jenny collections: data analysis projects for better business.">
+<meta name="theme-color" content="#102b4e">
+<title>Jenny Collections | Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="#home" onclick="showPage('home');return false;">Jenny <span>Collections</span></a>
+    <div class="nav-actions"><div class="language-switch"><button type="button" class="lang-btn active" id="langEN" onclick="setLanguage('en')">EN</button><button type="button" class="lang-btn" id="langDE" onclick="setLanguage('de')">DE</button></div><button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">☰</button></div>
+    <nav class="links" id="navlinks">
+      <a href="#home" onclick="showPage('home');closeNav();return false;" id="navHome">Home</a>
+      <a href="#about" onclick="showPage('about');closeNav();return false;" id="navAbout">About Me</a>
+      <a href="#projects" onclick="showPage('projects');closeNav();return false;" id="navProjects">Projects</a>
+      <a href="#notes" onclick="showPage('notes');closeNav();return false;" id="navNotes">Notes &amp; Insights</a>
+      <a class="contact-link" href="#contact" onclick="showPage('contact');closeNav();return false;" id="navContact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero page active" id="home">
+  <div class="container hero-inner">
+    <div class="eyebrow" id="heroEyebrow">Data-Driven · AI-Powered · Management</div>
+    <h1 id="heroTitle">Hi, I'm <span>Jenny</span></h1>
+    <p id="heroIntro">I provide data-based solutions for real-world business problems.</p>
+    <div class="hero-actions"><a class="btn primary" href="#projects" onclick="showPage('projects');return false;" id="heroProjectsBtn">Explore projects ↗</a><a class="btn secondary" href="#about" onclick="showPage('about');return false;" id="heroAboutBtn">About me</a></div>
+  </div>
+</section>
+
+<section class="page" id="about">
+  <div class="container about-wrap">
+    <div class="about-trio">
+      <aside class="about-photo"><div class="avatar">J<img src="jenny.jpg" alt="Jenny" onerror="this.remove()"></div><div class="cap"><b>Jenny</b><span id="aboutCardRole"></span><span id="aboutCardPlace"></span></div></aside>
+      <div class="stat-grid" id="statGrid"></div>
+      <div class="about-text">
+        <div class="kicker" id="aboutKicker">About Me</div>
+        <h2 id="aboutTitle">I turn business questions into data-backed decisions.</h2>
+        <p class="about-lead" id="aboutP1">I studied Management &amp; Digital Technology (M.Sc.) at the Technical University of Munich (TUM). I work across the full analysis chain: collecting and cleaning data, exploring it, modelling it, and turning the results into a clear recommendation. I take ownership of problems and manage multiple tasks in the workplace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="projects">
+  <div class="container">
+    <div class="section-head"><div class="kicker" id="projectsKicker">Projects</div><h2 id="projectsTitle">Selecting Your Interesting Works</h2></div>
+    <div class="project-toolbar">
+      <div class="filter-grid">
+        <div class="filter"><label id="industryLabel">Industry</label><div class="hier-filter" id="industryFilter"></div></div>
+        <div class="filter"><label id="methodLabel">Analytical Approach</label><div class="hier-filter" id="methodFilter"></div></div>
+        <div class="filter"><label id="softwareLabel">Tools &amp; Technologies</label><div class="hier-filter" id="softwareFilter"></div></div>
+      </div>
+      <div class="toolbar-bottom"><span class="result-count" id="resultCount" aria-live="polite"></span><button class="clear-btn" id="clearFiltersBtn" onclick="clearFilters()">Clear all filters ↺</button></div>
+      <div class="active-filters" id="activeFilters"></div>
+    </div>
+    <div class="project-grid" id="projectGrid"></div>
+    <article class="detail" id="projectDetail" aria-live="polite"></article>
+  </div>
+</section>
+
+<section class="page notes-page" id="notes"><div class="container"><div class="section-head"><div class="kicker" id="notesKicker">Notes &amp; Insights</div><h2 id="notesTitle">Learning for Life</h2></div><div id="notesList" class="notes-list" aria-live="polite"></div><article id="noteDetail" class="detail note-detail" aria-live="polite"></article></div></section>
+<section id="contact" class="contact page">
+  <div class="container">
+    <div class="section-head"><div class="kicker" id="contactKicker">Contact</div><h2 id="contactTitle">Let's Connect</h2></div>
+    <div class="contact-box"><div><p id="contactText">For professional opportunities, project discussions or collaboration, email me at <a class="email-address" href="mailto:jingyuhan.de@gmail.com">jingyuhan.de@gmail.com</a>.</p></div><a class="btn primary" id="emailBtn" href="mailto:jingyuhan.de@gmail.com">Email me ↗</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="container"><span>© <span id="year"></span> Jenny Collections</span><span id="footerText">Built with HTML, CSS &amp; JavaScript · GitHub Pages</span></div></footer>
+
+<script src="js/settings.js"></script>
+<script src="js/text.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

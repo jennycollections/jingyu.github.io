@@ -1,0 +1,70 @@
+{
+  "id": "second-hand-car-price-prediction",
+  "highlight": {
+    "rank": 2,
+    "value": "~90%",
+    "label": "accuracy of the Random Forest price model",
+    "labelDe": "Genauigkeit des Random-Forest-Preismodells"
+  },
+  "name": "Second-Hand Car Price Prediction",
+  "summary": "Prepare a large vehicle listings dataset and compare machine-learning models for used-car price prediction.",
+  "summaryDe": "Einen umfangreichen Fahrzeugdatensatz aufbereiten und Machine-Learning-Modelle zur Preisprognose von Gebrauchtwagen vergleichen.",
+  "industries": [
+    "Automotive"
+  ],
+  "methods": [
+    "EDA",
+    "Regression Analysis",
+    "Machine Learning",
+    "Decision Tree",
+    "Random Forest",
+    "XGBoost",
+    "Neural Networks",
+    "Feature Engineering",
+    "Hyperparameter Tuning"
+  ],
+  "software": [
+    "Python",
+    "Pandas",
+    "Scikit-learn",
+    "XGBoost",
+    "TensorFlow",
+    "Optuna"
+  ],
+  "objective": "Clean the dataset, identify factors that influence car prices, and build and evaluate predictive models.",
+  "objectiveDe": "Den Datensatz bereinigen, Einflussfaktoren auf Gebrauchtwagenpreise identifizieren sowie Prognosemodelle entwickeln und bewerten.",
+  "approach": [
+    "Clean the vehicle listings dataset and prepare the data for analysis and modelling.",
+    "Use exploratory data analysis and feature engineering to identify factors that influence car prices.",
+    "Train and evaluate multiple models, including Decision Tree, Random Forest, XGBoost and an artificial neural network, and compare their predictive performance."
+  ],
+  "approachDe": [
+    "Den Fahrzeugdatensatz bereinigen und die Daten für Analyse und Modellierung vorbereiten.",
+    "Mithilfe explorativer Datenanalyse und Feature Engineering die Einflussfaktoren auf Gebrauchtwagenpreise identifizieren.",
+    "Mehrere Modelle trainieren und bewerten, darunter Decision Tree, Random Forest, XGBoost und ein künstliches neuronales Netz, und ihre Prognoseleistung vergleichen."
+  ],
+  "findings": "The Random Forest model achieved the best performance, with approximately 90% accuracy.",
+  "findingsDe": "Das Random-Forest-Modell erzielte die beste Leistung mit einer Genauigkeit von ungefähr 90 %.",
+  "resources": [
+    {
+      "name": "Dataset",
+      "file": "Craigslist Vehicles Dataset",
+      "type": "dataset",
+      "url": "https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data"
+    },
+    {
+      "name": "Source Code",
+      "file": "second-hand car price prediction.ipynb",
+      "type": "code",
+      "url": "https://github.com/jennycollections/second-hand-car-price-prediction/blob/main/second-hand%20car%20price%20prediction.ipynb"
+    },
+    {
+      "name": "Project Report",
+      "file": "second-hand car price prediction report.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/second-hand-car-price-prediction/blob/main/second-hand%20car%20price%20prediction%20report.pdf"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/second-hand-car-price-prediction",
+  "status": "Individual data science project"
+}

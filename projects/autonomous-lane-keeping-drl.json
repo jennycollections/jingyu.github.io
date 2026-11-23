@@ -1,0 +1,51 @@
+{
+  "id": "autonomous-lane-keeping-drl",
+  "name": "Autonomous Lane-Keeping with Deep Reinforcement Learning",
+  "summary": "Explore reinforcement-learning agents for lane keeping, obstacle avoidance and pedestrian-aware driving in CARLA.",
+  "summaryDe": "Reinforcement-Learning-Agenten für Spurhaltung, Hindernisvermeidung und fußgängerbewusstes Fahren in CARLA untersuchen.",
+  "industries": [
+    "Automotive"
+  ],
+  "methods": [
+    "Deep Reinforcement Learning",
+    "DQN",
+    "PPO",
+    "Reward Design"
+  ],
+  "software": [
+    "Python",
+    "CARLA",
+    "Gym",
+    "Stable-Baselines3"
+  ],
+  "objective": "Develop a lane-keeping agent that can navigate a simulated urban environment while maintaining its lane and responding to pedestrians and obstacles.",
+  "objectiveDe": "Einen Spurhalte-Agenten entwickeln, der in einer simulierten städtischen Umgebung die Fahrspur hält und auf Fußgänger sowie Hindernisse reagiert.",
+  "approach": [
+    "Set up a CARLA simulation with a Tesla Model 3, camera and LiDAR observations.",
+    "Define state, action and reward components for lane following and collision avoidance.",
+    "Study DQN and PPO reinforcement-learning approaches and evaluate the trained agent in simulation episodes."
+  ],
+  "approachDe": [
+    "Eine CARLA-Simulation mit einem Tesla Model 3 sowie Kamera- und LiDAR-Beobachtungen einrichten.",
+    "Zustands-, Aktions- und Belohnungskomponenten für Spurhaltung und Kollisionsvermeidung definieren.",
+    "DQN- und PPO-Reinforcement-Learning-Ansätze untersuchen und den trainierten Agenten in Simulationsdurchläufen bewerten."
+  ],
+  "findings": "The project report describes the comparison of DQN and PPO and highlights the role of LiDAR-based obstacle detection and adaptive speed control. It also notes remaining challenges with sharp turns and dynamic obstacles.",
+  "findingsDe": "Der Projektbericht beschreibt den Vergleich von DQN und PPO und hebt die Bedeutung der LiDAR-basierten Hinderniserkennung sowie der adaptiven Geschwindigkeitsregelung hervor. Als verbleibende Herausforderungen werden enge Kurven und dynamische Hindernisse genannt.",
+  "resources": [
+    {
+      "name": "Source Code",
+      "file": "train_dqn.py",
+      "type": "code",
+      "url": "https://github.com/jennycollections/autonomous-lane-keeping-drl/blob/main/train_dqn.py"
+    },
+    {
+      "name": "Evaluation Script",
+      "file": "evaluate_dqn.py",
+      "type": "code",
+      "url": "https://github.com/jennycollections/autonomous-lane-keeping-drl/blob/main/evaluate_dqn.py"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/autonomous-lane-keeping-drl",
+  "status": "Team project · Autonomous driving"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "future-of-logistics-scenario-analysis",
+  "name": "The Future of Logistics: Scenario Analysis",
+  "summary": "Explore how automation, regional shifts and population ageing could shape global logistics towards 2050.",
+  "summaryDe": "Untersuchen, wie Automatisierung, regionale Veränderungen und demografische Alterung die globale Logistik bis 2050 prägen könnten.",
+  "industries": [
+    "Logistics",
+    "Logistics Strategy"
+  ],
+  "methods": [
+    "PESTEL Analysis",
+    "Trend Analysis",
+    "Scenario Planning",
+    "Strategic Analysis"
+  ],
+  "software": [],
+  "objective": "Identify major external trends and develop plausible logistics scenarios to derive strategic implications for supply-chain stakeholders.",
+  "objectiveDe": "Wichtige externe Trends identifizieren und plausible Logistikszenarien entwickeln, um strategische Implikationen für Akteure der Lieferkette abzuleiten.",
+  "approach": [
+    "Apply PESTEL analysis to structure political, economic, social, technological, environmental and legal drivers.",
+    "Assess and prioritize megatrends based on their relevance and interrelationships.",
+    "Develop scenario narratives around automation, regional shifts and ageing populations, then derive strategic insights."
+  ],
+  "approachDe": [
+    "Eine PESTEL-Analyse nutzen, um politische, wirtschaftliche, soziale, technologische, ökologische und rechtliche Einflussfaktoren zu strukturieren.",
+    "Megatrends anhand ihrer Relevanz und Wechselbeziehungen bewerten und priorisieren.",
+    "Szenarien zu Automatisierung, regionalen Veränderungen und alternden Bevölkerungen entwickeln und strategische Erkenntnisse ableiten."
+  ],
+  "findings": "The report develops three scenario perspectives and recommends that logistics companies consider automation investment alongside sustainability and compliance requirements.",
+  "findingsDe": "Der Bericht entwickelt drei Szenarioperspektiven und empfiehlt Logistikunternehmen, Investitionen in Automatisierung gemeinsam mit Nachhaltigkeits- und Compliance-Anforderungen zu betrachten.",
+  "resources": [
+    {
+      "name": "Project Report",
+      "file": "The_future_of_logistics scenario_analysis.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/the-future-of-logistics-scenario-analysis/blob/main/The_future_of_logistics%20scenario_analysis.pdf"
+    },
+    {
+      "name": "Transformation Suggestions",
+      "file": "The_future_of_logistics transformation_suggestion.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/the-future-of-logistics-scenario-analysis/blob/main/The_future_of_logistics%20transformation_suggestion.pdf"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/the-future-of-logistics-scenario-analysis",
+  "status": "Team project · Strategic foresight"
+}

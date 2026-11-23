@@ -1,0 +1,49 @@
+{
+  "id": "ab-test-menu-launch",
+  "name": "A/B Test: New Menu Launch",
+  "summary": "Evaluate whether a new menu and marketing initiative can improve store profitability using treatment and control stores.",
+  "summaryDe": "Untersucht, ob ein neues Menü und eine Marketinginitiative die Profitabilität von Filialen anhand von Test- und Kontrollfilialen verbessern können.",
+  "industries": [
+    "Retail & Consumer"
+  ],
+  "methods": [
+    "A/B Testing",
+    "Hypothesis Testing",
+    "Control Group Analysis"
+  ],
+  "software": [
+    "Python",
+    "Pandas",
+    "SciPy"
+  ],
+  "objective": "Assess the profit uplift associated with a new menu launch and evaluate whether the revenue increase can offset marketing costs.",
+  "objectiveDe": "Den Gewinnzuwachs durch die Einführung eines neuen Menüs bewerten und prüfen, ob der Umsatzanstieg die Marketingkosten ausgleichen kann.",
+  "approach": [
+    "Match treatment stores with comparable control stores using region, city, store size and average monthly sales.",
+    "Aggregate gross margin and sample counts by store and week across the comparison periods.",
+    "Compare growth rates and apply statistical tests to assess differences between treatment and control groups."
+  ],
+  "approachDe": [
+    "Testfilialen anhand von Region, Stadt, Filialgröße und durchschnittlichem Monatsumsatz mit vergleichbaren Kontrollfilialen abgleichen.",
+    "Bruttomargen und Stichprobenzahlen je Filiale und Woche für die Vergleichszeiträume aggregieren.",
+    "Wachstumsraten vergleichen und statistische Tests zur Bewertung der Unterschiede zwischen Test- und Kontrollgruppe anwenden."
+  ],
+  "findings": "The project defines a store-level treatment-versus-control comparison and tests growth-rate differences. The report materials should be consulted for the detailed statistical results and interpretation.",
+  "findingsDe": "Das Projekt vergleicht Test- und Kontrollfilialen auf Filialebene und prüft Unterschiede der Wachstumsraten. Für detaillierte statistische Ergebnisse und deren Interpretation sind die Projektunterlagen heranzuziehen.",
+  "resources": [
+    {
+      "name": "Project Report",
+      "file": "A New Menu Launch A_B Test.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/a-b-test-new-menu-launch/blob/main/A%20New%20Menu%20Launch%20A_B%20Test.pdf"
+    },
+    {
+      "name": "Source Code",
+      "file": "A New Menu Launch AB Test.ipynb",
+      "type": "code",
+      "url": "https://github.com/jennycollections/a-b-test-new-menu-launch/blob/main/A%20New%20Menu%20Launch%20AB%20Test.ipynb"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/a-b-test-new-menu-launch",
+  "status": "Team project · Retail analytics"
+}

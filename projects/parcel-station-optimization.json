@@ -1,0 +1,59 @@
+{
+  "id": "parcel-station-optimization",
+  "highlight": {
+    "rank": 3,
+    "value": "+2.9%",
+    "label": "overall performance vs. baseline in simulation",
+    "labelDe": "Gesamtleistung gegenüber der Baseline in der Simulation"
+  },
+  "name": "Parcel Station Space Optimization",
+  "summary": "Develop a Learn-Then-Optimize approach to assign parcels to storage locations under capacity and operational constraints.",
+  "summaryDe": "Einen Learn-Then-Optimize-Ansatz zur Zuordnung von Paketen zu Lagerplätzen unter Kapazitäts- und Betriebsrestriktionen entwickeln.",
+  "industries": [
+    "Logistics",
+    "Parcel Operations"
+  ],
+  "methods": [
+    "Simulation",
+    "Machine Learning",
+    "Optimization",
+    "Random Forest",
+    "Logistic Regression",
+    "Greedy Heuristic",
+    "Multi-Objective Optimization"
+  ],
+  "software": [
+    "Python",
+    "Scikit-learn"
+  ],
+  "objective": "Improve parcel-station space utilization and operational efficiency while considering customer convenience, employee workload, system efficiency and future flexibility.",
+  "objectiveDe": "Die Flächennutzung und betriebliche Effizienz von Paketstationen verbessern und dabei Kundenkomfort, Mitarbeiterbelastung, Systemeffizienz und zukünftige Flexibilität berücksichtigen.",
+  "approach": [
+    "Build an event-driven simulation with parcel arrivals, pickups and environmental effects.",
+    "Estimate pickup probability using an ensemble of Random Forest and Logistic Regression models.",
+    "Feed the learned probabilities into a greedy shelf-assignment heuristic that minimizes a weighted, multi-component cost function."
+  ],
+  "approachDe": [
+    "Eine ereignisgesteuerte Simulation mit Paketeingängen, Abholungen und Umwelteinflüssen aufbauen.",
+    "Die Abholwahrscheinlichkeit mithilfe eines Ensembles aus Random Forest und Logistic Regression schätzen.",
+    "Die gelernten Wahrscheinlichkeiten in eine Greedy-Heuristik zur Regalzuordnung einspeisen, die eine gewichtete mehrteilige Kostenfunktion minimiert."
+  ],
+  "findings": "In the simulated evaluation, the enhanced ML approach improved the overall performance score by 2.9% versus the baseline. The employee-workload score improved by 18%, while customer convenience decreased by 3.8%.",
+  "findingsDe": "In der Simulation verbesserte der ML-Ansatz den Gesamtleistungswert gegenüber der Baseline um 2,9 %. Der Wert für die Mitarbeiterbelastung stieg um 18 %, während der Kundenkomfort um 3,8 % zurückging.",
+  "resources": [
+    {
+      "name": "Project Report",
+      "file": "Parcel_station_space_optimization simulation LTO.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/parcel-station-space-optimization/blob/main/Parcel_station_space_optimization%20simulation%20LTO.pdf"
+    },
+    {
+      "name": "Source Code",
+      "file": "start.py · ml_lto_framework.py · optimization_module.py",
+      "type": "code",
+      "url": "https://github.com/jennycollections/parcel-station-space-optimization/blob/main/start.py"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/parcel-station-space-optimization",
+  "status": "Team project · Operations analytics"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "building-permit-process-mining",
+  "name": "Building Permit Process Optimization",
+  "summary": "Analyze municipal building-permit workflows and identify process bottlenecks through process mining.",
+  "summaryDe": "Kommunale Baugenehmigungsprozesse analysieren und mithilfe von Process Mining Engpässe identifizieren.",
+  "industries": [
+    "Public Sector"
+  ],
+  "methods": [
+    "Process Mining",
+    "Process Discovery",
+    "Conformance Checking",
+    "Performance Analysis"
+  ],
+  "software": [
+    "Disco",
+    "PM4Py",
+    "Python"
+  ],
+  "objective": "Evaluate and improve Municipality 1's building-permit application process using event-log data from Dutch municipalities.",
+  "objectiveDe": "Den Baugenehmigungsprozess von Municipality 1 anhand von Ereignisprotokollen niederländischer Kommunen bewerten und verbessern.",
+  "approach": [
+    "Use Disco and PM4Py for process discovery, conformance checking and process enhancement.",
+    "Filter event logs by activity frequency and group activities using a dictionary of activity descriptions.",
+    "Compare process quality metrics across municipalities and examine resource utilization and role distribution."
+  ],
+  "approachDe": [
+    "Disco und PM4Py für Process Discovery, Conformance Checking und Prozessverbesserung einsetzen.",
+    "Ereignisprotokolle nach Aktivitätshäufigkeit filtern und Aktivitäten anhand ihrer Beschreibungen gruppieren.",
+    "Qualitätskennzahlen der Prozesse zwischen Kommunen vergleichen sowie Ressourcennutzung und Rollenverteilung untersuchen."
+  ],
+  "findings": "The analysis identified bottlenecks mainly in Decision Making and Registration and Reception. The report also compares fitness, precision, generalization and simplicity across municipalities.",
+  "findingsDe": "Die Analyse identifizierte Engpässe insbesondere in den Bereichen Decision Making sowie Registration and Reception. Außerdem vergleicht der Bericht Fitness, Precision, Generalization und Simplicity zwischen den Kommunen.",
+  "resources": [
+    {
+      "name": "Dataset",
+      "file": "BPI Challenge 2015 · Municipality 1",
+      "type": "dataset",
+      "url": "https://data.4tu.nl/articles/dataset/BPI_Challenge_2015_Municipality_1/12709154"
+    },
+    {
+      "name": "Source Code",
+      "file": "main.py · process_mining/",
+      "type": "code",
+      "url": "https://github.com/jennycollections/building-permit-process-optimization/blob/main/main.py"
+    },
+    {
+      "name": "Project Report",
+      "file": "Building permit process optimization.pdf",
+      "type": "report",
+      "url": "https://github.com/jennycollections/building-permit-process-optimization/blob/main/Building%20permit%20process%20optimization.pdf"
+    }
+  ],
+  "githubUrl": "https://github.com/jennycollections/building-permit-process-optimization",
+  "status": "Team project · Process analytics"
+}

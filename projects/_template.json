@@ -1,0 +1,51 @@
+{
+  "id": "my-new-project",
+  "name": "Project name",
+  "summary": "One or two sentences shown on the project card.",
+  "summaryDe": "Optional: same sentence in German.",
+  "industries": [
+    "Retail & Consumer"
+  ],
+  "methods": [
+    "EDA"
+  ],
+  "software": [
+    "Python"
+  ],
+  "objective": "What question did the project answer?",
+  "objectiveDe": "Optional German version.",
+  "approach": [
+    "Step 1 of what you did.",
+    "Step 2.",
+    "Step 3."
+  ],
+  "approachDe": [
+    "Optional German step 1.",
+    "Schritt 2.",
+    "Schritt 3."
+  ],
+  "findings": "What you found. Include one number if you can.",
+  "findingsDe": "Optional German version.",
+  "resources": [
+    {
+      "name": "Project Report",
+      "file": "report.pdf",
+      "type": "report",
+      "url": "https://github.com/your-name/your-repo/blob/main/report.pdf"
+    },
+    {
+      "name": "Source Code",
+      "file": "analysis.ipynb",
+      "type": "code",
+      "url": "https://github.com/your-name/your-repo/blob/main/analysis.ipynb"
+    }
+  ],
+  "githubUrl": "https://github.com/your-name/your-repo",
+  "status": "Completed",
+  "highlight": {
+    "rank": 4,
+    "value": "+12%",
+    "label": "what the number means",
+    "labelDe": "Optional German label"
+  }
+}
